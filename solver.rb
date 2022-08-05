@@ -62,7 +62,7 @@ module CactpotSolver
             result[:bad_outcome] += 1
           end
         end
-        result[:outcome_ratio] = result[:good_outcome].to_f / (result[:bad_outcome] == 0 ? 1 : result[:bad_outcome])
+        result[:outcome_ratio] = result[:good_outcome].to_f / (result[:bad_outcome] == 0 ? 1 : result[:bad_outcome]).to_f
         result
     end
 
